@@ -43,6 +43,12 @@ function realAiReply() {
   } else if (lower.includes("اكواد") || lower.includes("كود")) {
     replyLine.textContent =
       "AI: الكود الرسمي هو: ⚔️ شــاهــيــن - 00 | أفراد كتيبة طيران الأمن الجوي | رئاسة أمن الدولة ⚔️.";
+} else if (lower.includes("السلام عليكم") || lower.includes("سلام عليكم")) {
+    replyLine.textContent =
+      "AI: وعليكم السلام ورحمة الله وبركاتة , حياك الله يا شاهين يمكنك الاستطلاع على المسوولين والقوانين.";
+} else if (lower.includes("الرابط") || lower.includes("رابط الدسكورد")) {
+    replyLine.textContent =
+      "AI:حياك الله يالشيخ : https://discord.gg/sw9.";
   } else {
     replyLine.textContent =
       "AI: لم أفهم سؤالك بشكل كامل، لكن يمكنك الرجوع لقسم القوانين أو إعادة صياغة سؤالك.";
@@ -71,3 +77,42 @@ function startWait() {
     indicator.innerHTML = "تم إنهاء الانتظار بنجاح.";
   }, 1000);
 }
+// إشعار ترحيب عند دخول الموقع
+window.addEventListener("load", () => {
+  const toast = document.getElementById("welcomeToast");
+  toast.classList.add("show");
+
+  setTimeout(() => {
+    toast.classList.remove("show");
+  }, 3500); // يختفي بعد 3.5 ثانية
+});
+// قائمة التحديثات
+const updates = [
+  {
+    title: "تحديث V1.0 – إطلاق منصة الطيران",
+    body: "إضافة صفحة القوانين، صفحة الاستعراض، ونظام التقديم الرسمي.",
+    date: "10 / 06 / 2026"
+  },
+  {
+    title: "تحديث V1.1 – إضافة نظام AI",
+    body: "إضافة مساعد ذكي يرد على أسئلة الطيارين حول القوانين والطيران.",
+    date: "10 / 06 / 2026"
+  },
+  
+];
+
+// عرض التحديثات
+const updatesList = document.getElementById("updatesList");
+
+updates.forEach(u => {
+  const card = document.createElement("div");
+  card.className = "update-card";
+
+  card.innerHTML = `
+    <div class="update-title">${u.title}</div>
+    <div class="update-body">${u.body}</div>
+    <div class="update-date">${u.date}</div>
+  `;
+
+  updatesList.appendChild(card);
+});
