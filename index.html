@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <title>SW9 Aviation Panel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+<header>
+  <div class="brand">
+    <div class="brand-logo">SW9</div>
+    <div>
+      <div class="brand-text-title"> القيادة العامة لطيران الأمن  </div>
+      <div class="brand-text-sub">رئاسة امن الدولة</div>
+    </div>
+  </div>
+  <nav class="nav-links">
+    <a href="#overview">الاستعراض</a>
+    <a href="#laws">القوانين</a>
+    <a href="#staff">المسؤولين</a>
+    <a href="#apply">التقديم</a>
+    <a href="#ai">لوحة AI</a>
+  </nav>
+</header>
+
+<main class="page">
+
+  <!-- ترحيب -->
+  <section class="welcome-card" id="welcome">
+    <div>
+      <div class="welcome-badge">دخول معتمد • SW9</div>
+      <div class="welcome-main-title">مرحباً بك في منصة الطيران SW9</div>
+      <div class="welcome-subtitle">
+        منصة مخصصة لإدارة الطيران، الطواقم، والمهام داخل سيرفر SW9 بأسلوب رسمي ومنظم.
+      </div>
+      <div class="welcome-tags">
+        <span class="tag">إدارة الطيران</span>
+        <span class="tag">سجلات رسمية</span>
+        <span class="tag">تكامل مع الديسكورد</span>
+      </div>
+      <div class="welcome-actions">
+        <button class="btn btn-primary" onclick="scrollToSection('overview')">
+          دخول اللوحة
+        </button>
+        <button class="btn btn-ghost" onclick="scrollToSection('apply')">
+          التقديم على الطيران
+        </button>
+      </div>
+    </div>
+    <div class="welcome-visual">
+      <div class="radar-circle"></div>
+      <div class="radar-circle"></div>
+      <div class="radar-dot"></div>
+    </div>
+  </section>
+
+  <!-- الاستعراض -->
+  <section class="section" id="overview">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="icon">📋</span>
+        <span>قائمة الاستعراض</span>
+      </div>
+      <div class="section-subtitle">نظرة عامة على أنظمة الطيران داخل SW9</div>
+    </div>
+
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-label">النظام</div>
+        <div class="card-title">قوانين القيادة العامة للطيران</div>
+        <div class="card-label">ضوابط المباشرة، الطيرات المسموحة، وتسجيل الدخول.</div>
+      </div>
+      <div class="card">
+        <div class="card-label">النظام</div>
+        <div class="card-title">سجل الرحلات</div>
+        <div class="card-label">توثيق الرحلات، الطيار، الزمن، ونوع المهمة.</div>
+      </div>
+      <div class="card">
+        <div class="card-label">النظام</div>
+        <div class="card-title">التحذيرات والترقيات</div>
+        <div class="card-label">إدارة المخالفات، التنبيهات، ومسار الترقيات.</div>
+      </div>
+      <div class="card">
+        <div class="card-label">النظام</div>
+        <div class="card-title">المهام الخاصة</div>
+        <div class="card-label">مهام طوارئ، مرافقة، واستطلاع.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- القوانين -->
+  <section class="section" id="laws">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="icon">⚖️</span>
+        <span>قوانين القيادة العامة للطيران</span>
+      </div>
+      <div class="section-subtitle">يجب الالتزام بجميع البنود التالية</div>
+    </div>
+
+    <ol class="laws-list">
+      <li>يمنع المباشرة فوق المنتزة والأماكن التي فيها تصنيع خمور، حشيش، إلخ...</li>
+      <li>يجب أن يكون لديك تصوير شغال على مدار تسجيل دخولك.</li>
+      <li>المباشرة فقط في موجة الرئاسة، ويمنع دخول أي موجة تابعة لوزارة الداخلية بدون إذن مسؤول الطيران.</li>
+      <li>الطيرات المسموحة: هليكوبتر 1 و 3 فقط. والطيرات الحربية تحتاج إذن مسؤول أفراد الطيران.</li>
+      <li>مسؤول الطوارئ والبحث والمرور لا يعد مسؤول طيران ويمنع أخذ الإذن منه.</li>
+      <li>يمنع المباشرة بدون تسجيل الدخول أو أثناء وجودك في قطاع أساسي آخر.</li>
+      <li>
+        الالتزام بنظام الأكواد:
+        ⚔️ شــاهــيــن - 00 | أفراد كتيبة طيران الأمن الجوي | رئاسة أمن الدولة ⚔️
+      </li>
+    </ol>
+
+    <div class="law-warning">أي مخالفة تعرضك للمحاسبة الشديدة.</div>
+  </section>
+
+  <!-- المسؤولين -->
+  <section class="section" id="staff">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="icon">🛡️</span>
+        <span>قائمة المسؤولين</span>
+      </div>
+      <div class="section-subtitle">[ جميع مسوولين الطيران]</div>
+    </div>
+
+    <table class="table">
+      <thead>
+        <tr>
+          <th>الاسم</th>
+          <th>الرتبة</th>
+          <th>الكود العسكري</th>
+          <th>القسم</th>
+          <th>التواصل</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>نواف الجهني</td>
+          <td><span class="badge-rank">قائد الطيران</span></td>
+          <td>SH-001</td>
+          <td>القيادة</td>
+      <td>
+  <button class="btn btn-ghost btn-small"
+          onclick="window.open('https://discord.gg/sw9', '_blank')">
+     nf5k
+ديسكورد
+  </button>
+</td>
+
+
+
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- التقديم -->
+  <section class="section" id="apply">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="icon">📝</span>
+        <span>قائمة التقديم</span>
+      </div>
+      <div class="section-subtitle">التقديم على الانضمام إلى طيران SW9</div>
+    </div>
+
+    <div class="apply-form">
+      <input type="text" placeholder="الاسم داخل السيرفر" />
+      <input type="text" placeholder="الكود العسكري" />
+ <input type="text" placeholder="الخبرات" />
+      <textarea placeholder="سبب رغبتك بالانضمام للطيران (اختياري)" rows="4"></textarea>
+
+      <div class="apply-actions">
+        <button class="btn btn-primary" onclick="goToDiscord()">التقديم عبر الديسكورد</button>
+        <button class="btn btn-ghost btn-small">حفظ محلياً فقط</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- AI -->
+  <section class="section" id="ai">
+    <div class="section-header">
+      <div class="section-title">
+        <span class="icon">🤖</span>
+        <span>قائمة AI</span>
+      </div>
+      <div class="section-subtitle">مساعد ذكي مبسط لقوانين الطيران داخل SW9</div>
+    </div>
+
+    <div class="ai-shell">
+      <div class="ai-log" id="aiLog">
+        <div>السلام عليكم ورحمة الله وبركاته، أهلاً بك في مساعد الطيران الخاص بسيرفر SW9.</div>
+      </div>
+
+      <div class="ai-input-row">
+        <input id="aiInput" type="text" placeholder="اكتب سؤالك هنا..." />
+        <button class="btn btn-primary btn-small" onclick="realAiReply()">إرسال</button>
+      </div>
+    </div>
+  </section>
+
+  
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>
